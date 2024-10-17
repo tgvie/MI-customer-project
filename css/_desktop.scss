@@ -16,7 +16,8 @@ main {
 .landing-page {
   grid-column: span 11;
   min-height: 100vh;
-  .main-course, .secondary-course {
+  .main-course,
+  .secondary-course {
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(11, 1fr);
@@ -27,7 +28,7 @@ main {
   .landing-page-title {
     grid-column: span 4;
   }
-  .landing-page-text {
+  h2 {
     grid-column: span 7;
   }
 }
