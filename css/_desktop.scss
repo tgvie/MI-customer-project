@@ -1,0 +1,55 @@
+body {
+  background-color: red;
+}
+
+header {
+  flex-direction: column;
+}
+
+main {
+  border: 2px solid aqua;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.landing-page {
+  grid-column: span 11;
+  min-height: 100vh;
+  .main-course, .secondary-course {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(11, 1fr);
+  }
+}
+
+.main-course {
+  .landing-page-title {
+    grid-column: span 4;
+  }
+  .landing-page-text {
+    grid-column: span 7;
+  }
+}
+
+.secondary-course {
+  .landing-page-img {
+    grid-column: span 5;
+  }
+  .landing-page-text {
+    grid-column: span 6;
+  }
+}
+
+/*.base {
+    grid-template-columns: repeat(11, 1fr);
+   
+    div:first-of-type {
+      grid-column: 1 / span 3;
+    }
+   
+    div:nth-child(2),
+    div:nth-child(3) {
+      grid-column: span 4;
+    }
+  }*/
