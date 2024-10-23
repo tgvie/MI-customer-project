@@ -5,18 +5,21 @@ body {
 header {
   font-family: $primary-font;
   text-transform: uppercase;
+  position: fixed;
+  width: 100vw;
   display: flex;
-  justify-content: center;
+  place-content: center;
   background-color: #000;
   color: #fff;
+  z-index: 3;
   button {
     width: 35px;
     height: 35px;
     background: transparent;
     border: 0;
     position: fixed;
-    left: 10px;
-    top: 2.5px;
+    left: 0.625rem;
+    top: 0.17rem;
     z-index: 1;
     span {
       display: block;
@@ -78,5 +81,50 @@ header {
   }
   h1 {
     margin: 0;
+    letter-spacing: 0.1rem;
   }
 }
+
+.main-course {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  h2 {
+    font-family: $primary-font;
+    text-transform: uppercase;
+    position: relative;
+    margin: 4rem 0 0 0;
+    grid-column: span 2;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    font-weight: 100;
+    span:nth-child(1) {
+      color: #ad7afe;
+      font-size: 1.5rem;
+      margin-bottom: -1.2rem;
+      margin-left: 4.95rem;
+    }
+    span:nth-child(2) {
+      color: #00ff39;
+      font-size: 4rem;
+    }
+    span:nth-child(3) {
+      color: #fff136;
+      font-size: 1.5rem;
+      margin-left: 0.6rem;
+      transform: translateY(-1.5rem);
+      z-index: -1;
+    }
+  }
+}
+
+.main-course-text {
+  font-family: $primary-font;
+  font-size: 1rem;
+  color: #00ff39;
+  grid-column: span 2;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+
