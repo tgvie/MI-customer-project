@@ -89,7 +89,7 @@ header {
 .main-course {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-columns: 1fr 5fr 5fr 1fr;
   h2 {
     font-family: $primary-font;
     text-transform: uppercase;
@@ -130,7 +130,7 @@ header {
 .secondary-course {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-columns: 1fr 5fr 5fr 1fr;
   margin-top: 1rem;
   img {
     justify-self: center;
@@ -160,3 +160,4 @@ header {
     text-transform: uppercase;
   }
 }
+
