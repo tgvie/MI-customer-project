@@ -14,37 +14,37 @@ header {
   z-index: 3;
   display: flex;
   justify-content: center;
-  
+
   /*HAMBURGER*/
   .hamburger {
-  button {
-    width: 44px;
-    height: 44px;
-    background: transparent;
-    border: 0;
-    z-index: 1;
-    span {
-      display: block;
-      position: relative;
-      left: 3px;
-      top: 10px;
-      width: 25px;
-      height: 4px;
-      background-color: #fff136;
-      border-radius: 5px;
-      margin-bottom: 3px;
+    button {
+      width: 44px;
+      height: 44px;
+      background: transparent;
+      border: 0;
+      z-index: 1;
+      span {
+        display: block;
+        position: relative;
+        left: 3px;
+        top: 10px;
+        width: 25px;
+        height: 4px;
+        background-color: #fff136;
+        border-radius: 5px;
+        margin-bottom: 3px;
+      }
+    }
+
+    /*HIDDEN CHECKBOX*/
+    input {
+      position: fixed;
+      width: 44px;
+      height: 44px;
+      z-index: 2;
+      opacity: 0;
     }
   }
-
-  /*HIDDEN CHECKBOX*/
-  input {
-    position: fixed;
-    width: 44px;
-    height: 44px;
-    z-index: 2;
-    opacity: 0;
-  }
-}
 
   /*ANIMATION*/
   input:checked + .menu button span {
@@ -165,12 +165,13 @@ header {
 .page3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /*overflow: hidden;*/
 }
 
 /*PAGE 1*/
+/*TOP PART*/
 .page1-title {
   grid-column: 2 / span 2;
+  padding: 30px;
 }
 .page1-text1 {
   font-family: $primary-font;
@@ -180,6 +181,8 @@ header {
   min-height: 100px;
   grid-column: 2 / span 2;
 }
+
+/*BOTTOM PART*/
 .page1-images {
   grid-column: 2 / span 2;
   position: relative;
@@ -193,7 +196,7 @@ header {
   }
 }
 .page1-text2 {
-  grid-column: 2 / span 2;
+  grid-column: span 4;
   font-family: $primary-font;
   font-size: 1rem;
   color: #ad7afe;
@@ -202,84 +205,92 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  height: 140px;
   padding: 5px;
   margin-top: -4px;
+  margin-bottom: 10px;
   p {
     margin-top: 0;
   }
   .explore-menu {
-    margin-top: -12px;
+    margin-top: -13px;
     color: #000;
     text-transform: uppercase;
   }
 }
 
 /*PAGE 2*/
-
-/*
-.secondary-course-text {
-  
-  grid-area: 2 / 2 / 3 / 4;
-  margin: 1rem 0rem;
-
-  .explore-menu {
-    margin-top: 0.2rem;
-    color: #000;
-    text-transform: uppercase;
-  }
-}
-
-.menu-container {
+.page2 {
   background-color: #fff136;
-  display: grid;
-  grid-template-columns: 1fr 5fr 5fr 1fr;
-  .menu-images {
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
-    grid-column: 2 / 4;
-    display: flex;
-    justify-content: space-evenly;
-    img {
-      object-fit: cover;
-    }
-    img:nth-child(1) {
-      width: auto;
-      height: 6.7rem;
-    }
-    img:nth-child(2), 
-    img:nth-child(3) {
-      width: 6.7rem;
-      height: 6.7rem;
-    }
+}
+
+/*IMAGES*/
+.food-images {
+  margin-top: 20px;
+  grid-column: span 4;
+  display: flex;
+  gap: 5px;
+
+  img {
+    object-fit: cover;
+    flex-grow: 1;
+  }
+  img:nth-child(1) {
+    width: 80px;
+    height: 100px;
+  }
+  img:nth-child(2),
+  img:nth-child(3) {
+    width: 100px;
+    height: 100px;
   }
 }
 
-.menu-list {
-  grid-column: 2 / 4;
- .menu-item {
-    background-color: #fff;
-    border-top: 0.1rem solid #000;
-    border-bottom: 0.1rem solid #000;
-    margin-bottom: 0.3rem;
-    padding: 0.2rem;
-    display: grid;
-    grid-template-columns: 5fr 6fr 2fr;
-    align-items: center;
-  }
-  .item-name {
+/*FOOD MENU*/
+.food-list {
+  list-style: none;
+  grid-column: span 4;
+  padding: 0;
+  margin-top: 5px;
+
+  .food-name,
+  .food-price {
     font-family: $primary-font;
-    .label-new {
-      background-color: #ac76ff;
-      font-family: 'Courier Prime', Courier, monospace;
-    }
+    font-size: 1.2rem;
   }
-  .item-info {
+  .food-info {
     font-family: $secondary-font;
-    font-size: 0.8rem;
+    display: block;
+    padding: 3px 0 3px 0;
   }
-  .item-price {
-    font-family: $primary-font;
+  .food-price {
+    display: flex;
+    justify-content: end;
     text-align: right;
   }
-}*/
+
+  li {
+    background-color: #fff;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    margin-bottom: 5px;
+    padding: 3px;
+  }
+}
+
+/*NEW, VEGAN, POPULAR, LABELS*/
+.food-label-new,
+.food-label-vegan,
+.food-label-popular {
+  font-family: "Courier Prime", Courier, monospace;
+  font-size: 0.8rem;
+}
+
+.food-label-new {
+  background-color: #ac76ff;
+}
+.food-label-vegan {
+  background-color: #00ff39;
+}
+.food-label-popular {
+  background-color: #e8db30;
+}
