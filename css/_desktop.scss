@@ -1,12 +1,33 @@
 body {
-  background-color: red;
+  background-color: green;
 }
-
 header {
-  flex-direction: column;
+width: 8.3vw;
 }
 
-main {
+.page-content {
+  margin-left: 8.3vw;
+}
+
+.page1 {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 16px;
+  .page1-title {
+    grid-column: 1 / span 4;
+  }
+  .page1-text1 {
+    grid-column: 5 / span 7;
+  }
+  .page1-image {
+    grid-column: 1 / span 5;
+  }
+  .page1-text2 {
+    grid-column: 6 / span 6;
+  }
+}
+
+/*main {
   border: 2px solid aqua;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -42,7 +63,7 @@ main {
   }
 }
 
-/*.base {
+.base {
     grid-template-columns: repeat(11, 1fr);
    
     div:first-of-type {
