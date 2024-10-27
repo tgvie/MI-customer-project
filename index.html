@@ -141,7 +141,34 @@
 
       <!--PAGE 3-->
       <div class="page page3">
+        <!--BOOKING FORM-->
+        <form class="book-table">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
 
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone">
+
+          <label for="date">Date</label>
+          <input type="date" id="date" required>
+
+          <label for="partysize">Party size</label>
+          <input type="number" id="partysize" min="1" max="10" value="1" required>
+
+          <label for="allergies">Allergies</label>
+          <input type="text" id="allergies" required>
+
+          <button type="reset">Cancel</button>
+          <button type="submit">Request</button>
+        </form>
+        <div class="contact-info">
+          <div class="contact-details">
+            <img src="assets/photos/dining-table-image.jpg" alt="Dining table in a restaurant setting. On the table there are neatly arranged wine glasses, water glasses, cutlery, and folded napkins. Warm ambient lighting from the ceiling, with stairs and curtains visible in the background." width="900" height="600">
+          </div>
+        </div>
       </div>
     </div>
   </main>

@@ -1,7 +1,3 @@
-body {
-  background-color: black;
-}
-
 /*FIXED NAVIGATION*/
 header {
   font-family: $primary-font;
@@ -142,8 +138,9 @@ header {
   }
 }
 
-/*PAGES*/
+/*PAGES STYLING*/
 .page-content {
+  display: grid;
   margin-left: 50px;
   .page {
     min-height: 100vh;
@@ -153,9 +150,16 @@ header {
     border-left: 10px solid #fff136;
     border-right: 10px solid #fff136;
   }
+  .page1 {
+    background-color: #000;
+  }
+  .page2 {
+    background-color: #fff136;
+  }
   .page3 {
     border-left: 10px solid #fff;
     border-right: 10px solid #fff;
+    background-color: #00ff39;
   }
 }
 
@@ -219,13 +223,9 @@ header {
 }
 
 /*PAGE 2*/
-.page2 {
-  background-color: #fff136;
-}
-
 /*IMAGES*/
 .food-images {
-  margin-top: 20px;
+  margin-top: 10px;
   grid-column: span 4;
   display: flex;
   gap: 5px;
@@ -284,13 +284,29 @@ header {
   font-family: "Courier Prime", Courier, monospace;
   font-size: 0.8rem;
 }
-
 .food-label-new {
-  background-color: #ac76ff;
+  background-color: #ad7afe;
 }
 .food-label-vegan {
   background-color: #00ff39;
 }
 .food-label-popular {
-  background-color: #e8db30;
+  background-color: #fff136;
+}
+
+/*PAGE 3*/
+.book-table {
+  grid-column: span 2;
+  margin-top: 10px;
+}
+
+.contact-info {
+  grid-column: span 4;
+
+  img {
+    object-fit: cover;
+    flex-grow: 1; 
+    width: 280px;
+    height: 280px;
+  }
 }
