@@ -1,15 +1,16 @@
-/*FIXED NAVIGATION*/
+/* FIXED HEADER
+----------------------------- */
 header {
   font-family: $primary-font;
   text-transform: uppercase;
-  width: 50px;
+  width: 70px;
   height: 100vh;
   position: fixed;
   background-color: #000;
   color: #fff;
   z-index: 3;
 
-  /*HAMBURGER*/
+  //HAMBURGER
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -38,7 +39,7 @@ header {
       }
     }
 
-    /*HIDDEN CHECKBOX*/
+    //HIDDEN CHECKBOX
     input {
       position: fixed;
       width: 44px;
@@ -50,7 +51,7 @@ header {
     }
   }
 
-  /*ANIMATION*/
+  //ANIMATION
   input:checked + .menu-button button span {
     position: absolute;
     top: 40px;
@@ -65,7 +66,8 @@ header {
     }
   }
 
-  /*NAVIGATION*/
+  /* NAVIGATION
+----------------------------- */
   nav {
     position: fixed;
     top: 0;
@@ -94,14 +96,17 @@ header {
   }
 }
 
-/*TOUGH COOKIE*/
+/* H1 TOUGH COOKIE
+----------------------------- */
 .tough-cookie {
   writing-mode: vertical-rl;
   text-orientation: upright;
   text-align: center;
+  padding-top: 50%;
 }
 
-/*DRIZZLE TAHINI CHICKPEAS*/
+/* DRIZZLE TAHINI CHICKPEAS
+----------------------------- */
 .page1-title {
   font-family: $primary-font;
   text-transform: uppercase;
@@ -115,13 +120,13 @@ header {
     transform: translate(-50%, -50%);
   }
 
-  /*DRIZZLE & CHICKPEAS*/
+  //DRIZZLE & CHICKPEAS
   span:nth-child(1),
   span:nth-child(3) {
     position: absolute;
   }
 
-  /*DRIZZLE*/
+  //DRIZZLE
   span:nth-child(1) {
     color: #ad7afe;
     top: -10px;
@@ -129,13 +134,13 @@ header {
     font-size: 1.57rem;
   }
 
-  /*TAHINI*/
+  //TAHINI
   span:nth-child(2) {
     color: #00ff39;
     font-size: 4rem;
   }
 
-  /*CHICKPEAS*/
+  //CHICKPEAS
   span:nth-child(3) {
     color: #fff136;
     left: 8px;
@@ -145,10 +150,20 @@ header {
   }
 }
 
-/*PAGES STYLING*/
+/* PAGE GRID
+----------------------------- */
+.page1,
+.page2,
+.page3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* PAGES STYLING
+----------------------------- */
 .page-content {
   display: grid;
-  margin-left: 50px;
+  margin-left: 70px;
   .page {
     min-height: 100vh;
   }
@@ -170,30 +185,26 @@ header {
   }
 }
 
-/*PAGE GRID*/
-.page1,
-.page2,
-.page3 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-/*PAGE 1*/
-/*TOP PART*/
+/* PAGE 1
+----------------------------- */
+//TOP PART
 .page1-title {
   grid-column: 2 / span 2;
   padding: 30px;
 }
 .page1-text1 {
   font-family: $primary-font;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #00ff39;
-  min-width: 300px;
-  min-height: 100px;
   grid-column: 2 / span 2;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  min-width: 330px;
+  min-height: 100px;
 }
 
-/*BOTTOM PART*/
+//BOTTOM PART
 .page1-images {
   grid-column: 2 / span 2;
   position: relative;
@@ -207,12 +218,14 @@ header {
   }
 }
 .page1-text2 {
-  grid-column: span 4;
+  grid-column: 2 / 4;
   font-family: $primary-font;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #ad7afe;
   background: #fff;
   border-left: 0.3rem solid #fff136;
+  min-width: 330px;
+  min-height: 100px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -229,8 +242,9 @@ header {
   }
 }
 
-/*PAGE 2*/
-/*IMAGES*/
+/* PAGE 2
+----------------------------- */
+//IMAGES
 .food-images {
   margin-top: 10px;
   grid-column: span 4;
@@ -252,7 +266,7 @@ header {
   }
 }
 
-/*FOOD MENU*/
+//FOOD MENU
 .food-list {
   list-style: none;
   grid-column: span 4;
@@ -262,10 +276,11 @@ header {
   .food-name,
   .food-price {
     font-family: $primary-font;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .food-info {
     font-family: $secondary-font;
+    font-size: 1.2rem;
     display: block;
     padding: 3px 0 3px 0;
   }
@@ -284,57 +299,79 @@ header {
   }
 }
 
-/*NEW, VEGAN, POPULAR, LABELS*/
+//NEW, VEGAN, POPULAR, LABELS
 .food-label-new,
 .food-label-vegan,
 .food-label-popular {
   font-family: "Courier Prime", Courier, monospace;
   font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+  height: 12px;
+  span {
+    display: inline-block;
+  }
 }
+
 .food-label-new {
   background-color: #ad7afe;
+  padding-inline: 12px;
+  transform: rotate(2deg);
+  span {
+    transform: rotate(-2deg);
+  }
 }
 .food-label-vegan {
   background-color: #00ff39;
+  padding-inline: 8px;
+  transform: rotate(-5deg);
+  span {
+    transform: rotate(5deg);
+  }
 }
 .food-label-popular {
   background-color: #fff136;
 }
 
-/*PAGE 3*/
-/*BOOK YOUR TABLE*/
+/* PAGE 3
+----------------------------- */
+//BOOK YOUR TABLE
 .booking-title {
-  font-size: 2.1rem;
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-size: 2.5rem;
   letter-spacing: 0.1rem;
 }
 
-/*BOOKING FORM*/
+//BOOKING FORM
 .book-table {
   grid-column: 1 / span 4;
-  font-family: $primary-font;
-  text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 0 10px 0 10px;
   .type-info {
-    margin-top: 10px;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 10px;
     label {
+      font-family: $primary-font;
+      text-transform: uppercase;
       width: 100%;
       align-self: center;
     }
     input {
+      font-family: $secondary-font;
       border: none;
       border-radius: 30px;
       width: 100%;
       height: 25px;
+      margin-left: -100px;
     }
   }
 }
 
-/*SUBMIT & RESET BUTTONS*/
+//SUBMIT & RESET BUTTONS
 .submit-reset {
+  font-family: $primary-font;
+  text-transform: uppercase;
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -343,6 +380,7 @@ header {
     border-radius: 8px;
     width: 100%;
     text-transform: uppercase;
+    color: #000;
   }
   .cancel {
     background-color: #ad7afe;
@@ -352,34 +390,36 @@ header {
   }
 }
 
-/*CONTACT BG IMAGE*/
+//CONTACT INFO
 .contacts {
-  grid-column: 2 / span 2;
+  grid-column: span 4;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  position: relative;
-  .contact-bg {
-    object-fit: cover;
+  align-items: center;
+  margin: 20px 0 20px 0;
+
+  //BACKGROUND IMAGE
+  .contacts-bg {
+    background-image: url("../assets/photos/dining-table-image.jpg");
+    min-height: 300px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     filter: blur(2px);
-    -webkit-filter: blur(2px);
-    width: 280px;
-    height: 280px;
+  }
+
+  //TEXT ON BG IMAGE
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-shadow: -2px -2px rgba(0, 0, 0, 1);
+    position: absolute;
   }
 }
 
-/*SVG + TEXTS*/
-.info-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  text-shadow: -2px -2px rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
+//SVG + TEXTS
 .info-details {
   display: flex;
   gap: 10px;

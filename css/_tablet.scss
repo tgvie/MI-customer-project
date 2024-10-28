@@ -1,10 +1,60 @@
 body {
-    background-color: yellow;
+  background-color: yellow;
 }
 
-.base {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
+/* PAGE 1
+----------------------------- */
+/*.page1-title {
+
+}*/
+//TEXT TOP
+.page1-text1 {
+  font-size: 2rem;
+  min-width: 600px;
+  min-height: 100px;
+}
+
+//TEXT BOTTOM
+.page1-text2 {
+  font-size: 2rem;
+}
+
+/* PAGE 2
+----------------------------- */
+//FOOD NAME & PRICE
+.food-list {
+  .food-name,
+  .food-price {
+    font-size: 1.8rem;
+  }
+
+  //FOOD INFO
+  .food-info {
+    font-size: 1.7rem;
+  }
+}
+
+/* PAGE 3
+----------------------------- */
+.booking-title {
+  font-size: 3.5rem;
+}
+
+.book-table {
+  font-size: 2rem;
+  .type-info {
+    input {
+      height: 35px;
+    }
+  }
+}
+
+.info-details {
+    .material-symbols-outlined {
+      font-size: 3.2rem;
+    }
+    .info-txt {
+      font-family: $primary-font;
+      font-size: 2rem;
+    }
   }
