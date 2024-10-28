@@ -16,6 +16,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+
+  <!--GOOGLE ICONS-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
 
 <body>
@@ -87,13 +90,13 @@
         <!--MENU IMAGES-->
         <div class="food-images">
           <img src="assets/photos/chickpea-salad-image.jpg"
-            alt="Picture of bowl with chickpeas and greens on a wooden table" width="480" height="600">
+            alt="Picture of bowl with chickpeas and greens on a wooden table" width="480" height="600" loading="lazy">
           <img src="assets/photos/hummus-image.jpg"
             alt="Picture of hummus with chickpeas, a drizzle of olive oil, herbs and a slice of pita bread" width="777"
-            height="600">
+            height="600" loading="lazy">
           <img src="assets/photos/tzatziki-image.jpg"
             alt="Picture of three dishes featuring a bowl of chickpeas, a plate of tzatziki with cucumber and yogurt, and a small bowl of green sauce"
-            width="450" height="600">
+            width="450" height="600" loading="lazy">
         </div>
 
         <!--MENU ITEMS-->
@@ -143,30 +146,70 @@
       <div class="page page3">
         <!--BOOKING FORM-->
         <form class="book-table">
-          <label for="name">Name</label>
-          <input type="text" id="name" required>
+          <h3 class="book-title">Book your table</h3>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" required>
+          <div class="type-info">
+            <label for="name">Name</label>
+            <input type="text" id="name" autocomplete="name" required>
+          </div>
 
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone">
+          <div class="type-info">
+            <label for="email">Email</label>
+            <input type="email" id="email" autocomplete="email" required>
+          </div>
 
-          <label for="date">Date</label>
-          <input type="date" id="date" required>
+          <div class="type-info">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" autocomplete="phone">
+          </div>
 
-          <label for="partysize">Party size</label>
-          <input type="number" id="partysize" min="1" max="10" value="1" required>
+          <div class="type-info">
+            <label for="date">Date</label>
+            <input type="date" id="date" autocomplete="address" autocomplete="off" required>
+          </div>
 
-          <label for="allergies">Allergies</label>
-          <input type="text" id="allergies" required>
+          <div class="type-info">
+            <label for="partysize">Party size</label>
+            <input type="number" id="partysize" min="1" max="10" value="1" autocomplete="off" required>
+          </div>
 
-          <button type="reset">Cancel</button>
-          <button type="submit">Request</button>
+          <div class="type-info">
+            <label for="allergies">Allergies</label>
+            <input type="text" id="allergies" autocomplete="off" required>
+          </div>
+
+          <div class="submit-reset">
+            <button class="cancel" type="reset">Cancel</button>
+            <button class="request" type="submit">Request</button>
+          </div>
         </form>
-        <div class="contact-info">
-          <div class="contact-details">
-            <img src="assets/photos/dining-table-image.jpg" alt="Dining table in a restaurant setting. On the table there are neatly arranged wine glasses, water glasses, cutlery, and folded napkins. Warm ambient lighting from the ceiling, with stairs and curtains visible in the background." width="900" height="600">
+
+        <!--CONTACT INFO-->
+        <div class="contacts">
+          <img class="contact-bg" src="assets/photos/dining-table-image.jpg"
+            alt="Dining table in a restaurant setting. On the table there are neatly arranged wine glasses, water glasses, cutlery, and folded napkins. Warm ambient lighting from the ceiling, with stairs and curtains visible in the background."
+            width="900" height="600" loading="lazy">
+
+          <!--SVG ICONS AND TEXT-->
+          <div class="info-container">
+            <!--PHONE-->
+            <div class="info-details">
+              <span class="material-symbols-outlined">call</span>
+              <span class="info-txt">+46 8 123 45 67</span>
+            </div>
+
+            <!--EMAIL-->
+            <div class="info-details">
+              <span class="material-symbols-outlined">alternate_email</span>
+              <span class="info-txt">book@toughcookie.com</span>
+            </div>
+
+            <!--ADDRESS-->
+            <div class="info-details">
+              <span class="material-symbols-outlined">location_on</span>
+              <span class="info-txt">Brända Tomten <br>
+                111 31 Stockholm</span>
+            </div>
           </div>
         </div>
       </div>
