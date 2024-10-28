@@ -8,27 +8,33 @@ header {
   background-color: #000;
   color: #fff;
   z-index: 3;
-  display: flex;
-  justify-content: center;
 
   /*HAMBURGER*/
   .hamburger {
-    button {
-      width: 44px;
-      height: 44px;
-      background: transparent;
-      border: 0;
-      z-index: 1;
-      span {
-        display: block;
-        position: relative;
-        left: 3px;
-        top: 10px;
-        width: 25px;
-        height: 4px;
-        background-color: #fff136;
-        border-radius: 5px;
-        margin-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .menu-button {
+      padding-top: 20px;
+      button {
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        span {
+          display: block;
+          position: relative;
+          width: 25px;
+          height: 4px;
+          background-color: #fff136;
+          border-radius: 5px;
+          margin-bottom: 3px;
+        }
       }
     }
 
@@ -37,16 +43,17 @@ header {
       position: fixed;
       width: 44px;
       height: 44px;
+      top: 18px;
+      left: 3.5px;
       z-index: 2;
       opacity: 0;
     }
   }
 
   /*ANIMATION*/
-  input:checked + .menu button span {
+  input:checked + .menu-button button span {
     position: absolute;
-    top: 30px;
-    left: 12.5px;
+    top: 40px;
     &:nth-child(2) {
       opacity: 0;
     }
@@ -81,7 +88,7 @@ header {
       text-align: center;
     }
   }
-  input:checked + .menu nav {
+  input:checked + .menu-button nav {
     visibility: visible;
     opacity: 1;
   }
@@ -295,7 +302,6 @@ header {
 }
 
 /*PAGE 3*/
-
 /*BOOK YOUR TABLE*/
 .book-title {
   font-size: 2.1rem;
