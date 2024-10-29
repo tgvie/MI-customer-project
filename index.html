@@ -7,19 +7,19 @@
   <title>Tough Cookie</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
-  <!-------------------- GOOGLE FONTS -------------------->
+  <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto+Condensed&display=swap"
     rel="stylesheet">
 
-  <!-------------------- GOOGLE ICONS -------------------->
+  <!-- GOOGLE ICONS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
 
 <body>
   <main>
-    <!-------------------- HEADER -------------------->
+    <!-- HEADER -->
     <header>
       <!--HAMBURGER-->
       <div class="hamburger">
@@ -46,9 +46,9 @@
       </div>
     </header>
 
-    <!-------------------- PAGE CONTENT -------------------->
+    <!-- PAGE CONTENT -->
     <div class="page-content">
-      <!-------------------- PAGE 1 -------------------->
+      <!-- PAGE 1 -->
       <!--TOP-->
       <div class="page page1">
         <div class="page1-title">
@@ -59,86 +59,90 @@
           </div>
         </div>
 
-        <div class="page1-text1">Main course hemp seeds Southern Italian shiitake mushrooms a delicious meal banana
+        <p class="page1-text1">Main course hemp seeds Southern Italian shiitake mushrooms a delicious meal banana
           bread lemon tahini dressing apple vinaigrette veggie burgers cool cucumbers coconut sugar. Seasonal edamame
           hummus asian pear kale bite sized ghost pepper one bowl mediterranean luxury bowl cayenne Thai sun pepper.
-        </div>
+        </p>
 
         <!--BOTTOM-->
-        <div class="page1-images">
-          <img src="assets/photos/salad-image.png" alt="Picture of a green lettuce" width="300" height="250">
-          <div class="salad-arrow"><img src="assets/icons/arrow.svg" alt="Arrow pointing down" width="35" height="35">
-          </div>
-        </div>
+        <figure class="page1-images">
+          <img class="lettuce-img" src="assets/photos/salad-image.png"
+            alt="Close-up image of a fresh green lettuce with vibrant leaves on a transparent background" width="800"
+            height="640">
+          <button class="salad-arrow">
+            <img src="assets/icons/arrow.svg" alt="Downward pointing arrow icon" width="35" height="35">
+          </button>
+        </figure>
 
         <div class="page1-text2">
           <p>Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries roasted butternut
             squash basmati thyme hummus falafel bowl cozy butternut cilantro lime vinaigrette
             heat mint potato chocolate cookie seeds samosa walnut mushroom tart.</p>
           <div class="explore-menu">Explore Menu
-            <img src="assets/icons/arrow2.svg" alt="Arrow pointing right" width="10" height="10">
+            <img src="assets/icons/arrow2.svg" alt="Rightward pointing arrow icon" width="10" height="10">
           </div>
         </div>
       </div>
 
-      <!-------------------- PAGE 2 -------------------->
+      <!-- PAGE 2 -->
       <div class="page page2">
         <!--MENU IMAGES-->
         <div class="food-images">
           <img src="assets/photos/chickpea-salad-image.jpg"
-            alt="Picture of bowl with chickpeas and greens on a wooden table" width="480" height="600" loading="lazy">
+            alt="Bowl of chickpeas, vegetables, olives, and flatbread on a wooden table." width="480" height="600"
+            loading="lazy">
           <img src="assets/photos/hummus-image.jpg"
-            alt="Picture of hummus with chickpeas, a drizzle of olive oil, herbs and a slice of pita bread" width="777"
-            height="600" loading="lazy">
+            alt="Bowl of hummus garnished with chickpeas, herbs, and pita bread." width="777" height="600"
+            loading="lazy">
           <img src="assets/photos/tzatziki-image.jpg"
-            alt="Picture of three dishes featuring a bowl of chickpeas, a plate of tzatziki with cucumber and yogurt, and a small bowl of green sauce"
+            alt="Three bowls featuring chickpeas, tzatziki with cucumber and yogurt, and a small bowl of green sauce"
             width="450" height="600" loading="lazy">
         </div>
 
         <!--MENU ITEMS-->
         <ul class="food-list">
           <li>
-            <span class="food-name">HALLOUMI MOKLIEH</span>
-            <span class="food-label-new"><span>NEW!</span></span>
+            <span class="food-name">Halloumi Moklieh</span>
+            <span class="food-label-new"><span>New!</span></span>
             <span class="food-info">Deep-fried halloumi</span>
             <span class="food-price">195 kr</span>
           </li>
           <li>
-            <span class="food-name">MOJADDARA</span>
+            <span class="food-name">Mojaddara</span>
             <span class="food-info">Green lentis with rice and fried onion</span>
             <span class="food-price">135 kr</span>
           </li>
           <li>
-            <span class="food-name">CHIAR & LABAN</span>
+            <span class="food-name">Chiar & Laban</span>
             <span class="food-info">Lebanese spicy yoghurt with chopped cucumber</span>
             <span class="food-price">95 kr</span>
           </li>
           <li>
-            <span class="food-name">WARAK INAB</span>
+            <span class="food-name">Warak Inab</span>
             <span class="food-info">Rice- and veggie-filled dolma with mint and lemon</span>
             <span class="food-price">85 kr</span>
           </li>
           <li>
-            <span class="food-name">MOUTABBAL BATINZIAN</span>
-            <span class="food-label-vegan"><span>VEGAN</span></span>
+            <span class="food-name">Moutabbal Batinzian</span>
+            <span class="food-label-vegan"><span>Vegan</span></span>
             <span class="food-info">Smoked chopped aubergine, sesame paste, garlic and lemon</span>
             <span class="food-price">175 kr</span>
           </li>
           <li>
-            <span class="food-name">ARDISHOKI</span>
-            <span class="food-label-popular"><span>POPULAR</span></span>
+            <span class="food-name">Ardishoki</span>
+            <span class="food-label-popular"><span>Popular</span></span>
             <span class="food-info">Artichoke with lemon and garlic marinade</span>
             <span class="food-price">99 kr</span>
           </li>
           <li>
-            <span class="food-name">MHAMARA</span>
+            <span class="food-name">Mhamara</span>
             <span class="food-info">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</span>
             <span class="food-price">123 kr</span>
           </li>
         </ul>
       </div>
 
-      <!-------------------- PAGE 3 -------------------->
+      <!-- PAGE 3 -->
       <div class="page page3">
         <!--BOOKING FORM-->
         <form class="book-table">
@@ -156,12 +160,12 @@
 
           <div class="type-info">
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" autocomplete="phone">
+            <input type="tel" id="phone" autocomplete="tel">
           </div>
 
           <div class="type-info">
             <label for="date">Date</label>
-            <input type="date" id="date" autocomplete="address" autocomplete="off" required>
+            <input type="datetime-local" id="date" autocomplete="off" required>
           </div>
 
           <div class="type-info">
