@@ -68,7 +68,7 @@ header {
     }
   }
 
-/* NAVIGATION
+  /* NAVIGATION
 ----------------------------- */
   nav {
     position: fixed;
@@ -204,9 +204,10 @@ header {
   font-size: 1.1rem;
   color: #00ff39;
   grid-column: 2 / span 2;
+  padding: 10px;
+  margin: 0;
   display: flex;
   align-items: center;
-  padding: 10px;
   min-width: 330px;
   min-height: 100px;
 }
@@ -251,7 +252,7 @@ header {
   flex-direction: column;
   justify-content: center;
   padding: 5px;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   p {
     color: #ad7afe;
     margin: 0;
@@ -269,20 +270,15 @@ header {
   margin-top: 10px;
   grid-column: span 4;
   display: flex;
-  gap: 5px;
-
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
   img {
-    object-fit: cover;
-    flex-grow: 1;
-  }
-  img:nth-child(1) {
-    width: 80px;
-    height: 100px;
-  }
-  img:nth-child(2),
-  img:nth-child(3) {
     width: 100px;
     height: 100px;
+    object-fit: cover;
+    flex-grow: 1;
   }
 }
 
@@ -300,7 +296,7 @@ header {
     margin-bottom: 5px;
     padding: 3px;
   }
-  
+
   .food-name,
   .food-price {
     font-family: $primary-font;
