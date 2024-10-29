@@ -3,6 +3,7 @@
 /*.page1-title {
 
 }*/
+
 //TOP PART
 .page1-text1 {
   font-size: 2rem;
@@ -40,6 +41,14 @@
   .food-info {
     font-size: 1.7rem;
   }
+}
+
+//NEW, VEGAN, POPULAR LABELS
+.food-label-new,
+.food-label-vegan,
+.food-label-popular {
+  font-size: 1.2rem;
+  height: 20px;
 }
 
 /* PAGE 3
