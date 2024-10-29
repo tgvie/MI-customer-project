@@ -8,7 +8,7 @@ header {
   position: fixed;
   background-color: #000;
   color: #fff;
-  z-index: 3;
+  z-index: 999;
 
   //HAMBURGER
   .hamburger {
@@ -66,7 +66,7 @@ header {
     }
   }
 
-  /* NAVIGATION
+/* NAVIGATION
 ----------------------------- */
   nav {
     position: fixed;
@@ -78,6 +78,7 @@ header {
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: -1;
     ul {
       margin: 0;
       padding: 0;
