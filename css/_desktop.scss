@@ -1,3 +1,28 @@
+header {
+  .hamburger {
+    .menu-button {
+      button {
+        span {
+          width: 44px;
+          height: 7px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* NAVIGATION
+----------------------------- */
+nav {
+  ul {
+    li:hover {
+      transform: translateX(5px);
+      transition: transform 0.3s;
+    }
+  }
+}
+
 /* PAGE 1
 ----------------------------- */
 .page1 {
@@ -42,6 +67,15 @@
     font-size: 2.8rem;
   }
 }
+.explore-menu {
+  a {
+    gap: 20px;
+    img {
+      width: 34px;
+      height: 30px;
+    }
+  }
+}
 
 /* PAGE 2
 ----------------------------- */
@@ -51,5 +85,17 @@
       transform: translateX(5px);
       transition: transform 0.3s;
     }
+  }
+}
+
+/* COOKIES
+----------------------------- */
+footer {
+  z-index: 4;
+  font-size: 1.5rem;
+  padding-block: 30px;
+  button {
+    width: 200px;
+    font-size: 2rem;
   }
 }

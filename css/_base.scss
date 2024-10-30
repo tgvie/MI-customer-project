@@ -3,7 +3,7 @@
 }
 
 a {
-  text-decoration: none; /* Removes the underline */
+  text-decoration: none;
   color: inherit;
 }
 
@@ -18,9 +18,9 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
-
   position: fixed;
   z-index: 5;
+
   //HAMBURGER
   .hamburger {
     display: flex;
@@ -56,7 +56,7 @@ header {
       width: 44px;
       height: 44px;
       top: 18px;
-      left: 3.5px;
+      left: 13px;
       z-index: 2;
       opacity: 0;
     }
@@ -77,19 +77,20 @@ header {
     }
   }
 
-  /* NAVIGATION
+/* NAVIGATION
 ----------------------------- */
   nav {
     position: fixed;
     top: 0;
     left: 0;
     background-color: #ad7afe;
-    width: 100%;
+    width: calc(100% - 70px);
     height: 100%;
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     z-index: -1;
+    left: 70px;
     ul {
       margin: 0;
       padding: 0;
@@ -263,12 +264,24 @@ header {
   padding: 5px;
   margin: 0 0 10px 0;
   p {
+    padding-left: 10px;
     color: #ad7afe;
     margin: 0;
   }
-  .explore-menu {
-    color: #000;
-    text-transform: uppercase;
+}
+.explore-menu {
+  color: #000;
+  text-transform: uppercase;
+  padding-left: 10px;
+  a {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    img {
+      width: 10px;
+      height: 10px;
+    }
   }
 }
 
@@ -474,9 +487,8 @@ header {
 footer {
   background-color: #ad7afe;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -490,7 +502,6 @@ footer {
 .cookies-buttons {
   display: flex;
   gap: 10px;
-  
   button {
     font-family: $primary-font;
     text-transform: uppercase;
