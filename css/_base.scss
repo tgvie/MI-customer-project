@@ -231,6 +231,7 @@ header {
   align-items: center;
   width: 300px;
   height: 250px;
+
   .lettuce-img {
     width: 100%;
     height: auto;
@@ -239,9 +240,7 @@ header {
   .salad-arrow {
     position: absolute;
     bottom: 5px;
-    left: 17px;
-    background: transparent;
-    border: none;
+    left: 22px;
     img {
       width: 35px;
       height: 35px;
@@ -419,7 +418,7 @@ header {
     color: #000;
   }
   .cancel {
-    background-color: #ad7afe;
+    background-color: #ac76ff;
   }
   .request {
     background-color: #fff136;
