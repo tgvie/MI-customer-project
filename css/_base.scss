@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* FIXED HEADER
 ----------------------------- */
 header {
@@ -11,7 +15,7 @@ header {
   flex-direction: column;
 
   position: fixed;
-  z-index: 999;
+  z-index: 5;
   //HAMBURGER
   .hamburger {
     display: flex;
@@ -457,5 +461,43 @@ header {
   .info-txt {
     font-family: $primary-font;
     font-size: 1.3rem;
+  }
+}
+
+/* COOKIES
+----------------------------- */
+footer {
+  background-color: #ad7afe;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 7;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-block: 15px;
+}
+
+.cookies-buttons {
+  display: flex;
+  gap: 10px;
+  
+  button {
+    font-family: $primary-font;
+    text-transform: uppercase;
+    color: #000;
+    border: none;
+    border-radius: 7px;
+    padding-inline: 20px;
+  }
+  .co-decline {
+    background-color: #fff136;
+  }
+  .co-accept {
+    background-color: #00ff39;
   }
 }
