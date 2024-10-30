@@ -31,7 +31,6 @@
 
     //ARROW ANIMATION
     &:hover {
-      z-index: 9999;
       .salad-arrow {
         bottom: 0;
         transition: bottom 1s cubic-bezier(0.075, 0.82, 0.165, 1);
