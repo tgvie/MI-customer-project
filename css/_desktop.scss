@@ -43,3 +43,14 @@
     font-size: 2.8rem;
   }
 }
+
+/* PAGE 2
+----------------------------- */
+.food-list {
+  li {
+    &:hover {
+      transform: translateX(5px);
+      transition: transform 0.3s;
+    }
+  }
+}
