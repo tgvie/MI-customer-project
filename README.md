@@ -1,6 +1,7 @@
-# My first mock client project
+# Tough Cookie
 
-This repository contains my completed assignment for a mock client project, designed to create a one-page website for a fictional client, Kantarella Löwenskog, as part of my coursework. The site was designed to follow a given brief and specifications, with additional design decisions made based on my own interpretation due to the absence of clear guidelines on some details.
+### My first mock-client project
+This repository contains my completed assignment for a mock-client project, designed to create a one-page website for a fictional client, Kantarella Löwenskog, as part of my coursework. The site was designed to follow a given brief and specifications, with additional design decisions made based on my own interpretation due to the absence of clear guidelines on some details.
 
 This project showcases my ability to work within a given brief, make informed design decisions, and implement a one-page layout without JavaScript.
 
