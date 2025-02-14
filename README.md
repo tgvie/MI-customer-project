@@ -6,7 +6,7 @@ This repository contains my completed assignment for a mock-client project, desi
 
 This project showcases my ability to work within a given brief, make informed design decisions, and implement a one-page layout without JavaScript.
 
-## 🗝️ Key Features
+### 🗝️ Key Features
 | 🎯 |   |
 | -- | - |
 | One-Page layout | The website is a "one-pager," meaning users scroll vertically through content rather than navigating across multiple pages |
@@ -80,7 +80,7 @@ This also covered key learning objectives from the course, all of which were suc
 
 <div align="right">
   
-## ✍️ Author/s
+## ✍️ Author
 🧑‍💻 [@tgvie](https://github.com/tgvie)
 
 </div>
